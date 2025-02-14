@@ -16,7 +16,7 @@ const Cards =  ({ inputtext })=> {
     <>
     <div className="bg-blue-100 py-10 ">
       <div className="container mx-auto">
-        {filteredItems.length === 0 ? (<div className=" flex justify-center items-center h-[295px] text-gray-600 text-xl font-bold">No Items Found</div>) :(
+        {filteredItems.length === 0 ? (<div className=" flex justify-center items-center h-[295px] text-gray-800 text-xl font-bold">No Items Found</div>) :(
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {filteredItems.map((data,index) => (

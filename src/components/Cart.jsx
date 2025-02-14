@@ -36,7 +36,7 @@ const Cart =  ({ inputtext })=> {
                       .filter((el)=>el.brand.toLowerCase().includes(inputtext))
                       .map((data, index) => {
                         return (
-                          <div className="row mb-4 d-flex justify-content-between align-items-center">
+                          <div key={index} className="row mb-4 d-flex justify-content-between align-items-center">
                             <div className="col-md-2 col-lg-2 col-xl-2">
                               <img
                                 src={`/images/${data.img}`}
